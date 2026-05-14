@@ -15,7 +15,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
       - run: npm install || true
       - run: npm run lint || true
 
@@ -27,7 +26,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
       - run: npm install || true
       - run: npm run test -- --run 2>/dev/null || npm run test || true
 
@@ -40,7 +38,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
       - run: npm install || true
       - run: npm run build || true
 
